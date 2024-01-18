@@ -19,11 +19,11 @@ const RetrivedData = () => {
         <button className='py-2 px-4 m-2 bg-sky-600 text-white rounded' onClick={FindData}> Find </button>
         { 
         personData.length>0?<div className='p-2 border-2 border-gray-500 w-fit' >
-            <p>name:{personData[0].name}</p>
-            <p>DOB:{personData[0].dob}</p>
-            <p>Aadhar Number:{personData[0].aadhar}</p>
-            <p>Mobile Number:{personData[0].mobile}</p>
-            <p>Age:{personData[0].age}</p>
+            <p><span className='font-medium px-3'>name : </span>{personData[0].name}</p>
+            <p><span className='font-medium px-3'>DOB : </span>{personData[0].dob}</p>
+            <p><span className='font-medium px-3'>Aadhar Number : </span>{personData[0].aadhar}</p>
+            <p><span className='font-medium px-3'>Mobile Number : </span>{personData[0].mobile}</p>
+            <p><span className='font-medium px-3'>Age:</span>{personData[0].age}</p>
         </div>:<div>no data</div>
         }
       
