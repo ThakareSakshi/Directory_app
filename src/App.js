@@ -23,7 +23,7 @@ function App() {
    <Header/>
    <button className='p-2 bg-sky-600 text-white m-2 ' onClick={addPersonTab}>Add person</button>
    <button className='p-2 bg-sky-600 text-white m-2' onClick={retrivePersonTab}>retrive Data</button>
-   <div className='p-2 border-2 border-solid border-gray-500 relative min-h-72'>
+   <div className='p-2 border-2 border-solid border-gray-500 relative min-h-72 m-4'>
    {
     Addperson? <AddNewPerson/>:
     <RetrivedData/>
