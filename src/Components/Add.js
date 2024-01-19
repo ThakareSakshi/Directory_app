@@ -25,6 +25,7 @@ const Add = ({setAddNew}) => {
         age:age
       }
       Directory.setData([...Directory.data,newPerson ]);
+      localStorage.setItem("persons",JSON.stringify([...Directory.data,newPerson ]))
       setAddNew(false);
         
     }

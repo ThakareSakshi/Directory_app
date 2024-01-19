@@ -7,6 +7,7 @@ const TableRows = (props) => {
     const OnDelete=()=>{
          const newData =Directory.data.filter((person)=>person.mobile!=props.mobile);
           Directory.setData([...newData]);
+          localStorage.setItem("persons",JSON.stringify([...newData]));
     }
   return (
    <tr>
